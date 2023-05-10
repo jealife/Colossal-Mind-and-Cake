@@ -1,0 +1,124 @@
+* {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Nunito', sans-serif;
+}
+
+header {
+    top: 0;
+    width: 100%;
+    position: absolute;
+}
+body{
+    background: #ffdff9;
+}
+body::-webkit-scrollbar {
+    width: 0.2rem;
+    background-color: #d397c8;
+}
+
+body::-webkit-scrollbar-thumb {
+    border-radius: 50px;
+    background: #ffc688;
+}
+
+main {
+    display: flex;
+    padding: 0 2rem;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container {
+    max-width: 1024px;
+}
+
+.hero {
+    margin-top: 1rem;
+    width: 100%;
+    border-radius: 25px;
+    min-height: 95vh;
+    background: #263238;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-image: url(home.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    -o-background-size: cover;
+    background-position: center center;
+}
+
+.hero-container {
+    min-height: 95vh;
+    border-radius: 25px;
+    width: 100%;
+    background-color: #0000006c;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: #f6fcff;
+}
+
+.hero-content {
+    transition: all 0.5s ease;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 50%;
+    align-items: center;
+}
+
+.hero-content h1 {
+    line-height: 65px;
+    font-size: 4rem;
+    font-weight: 900;
+}
+.hero-content .btn{
+    background: linear-gradient( 225deg, #ffc688,#ff9100bf) ;
+    color: #fff;
+    font-weight:600;
+    width: max-content;
+    padding: 0.5rem ;
+    border-radius: 14px;
+    transition: all 0.5s ease;
+} 
+.hero-content  p{
+    font-size: 1.2rem;
+}
+.hero-content img{
+    width: 250px;
+    filter: drop-shadow(0 3px 10px #faebffd6);
+}
+.btn:hover{
+    scale: 1.1;
+    box-shadow: #ffd3a487 0px 5px 12px 5px ;
+}
+@media (max-width: 481px) and (max-width: 767px) {
+    .hero-content h1 {
+        text-align: center;
+        line-height: 45px;
+        font-size: 2.5rem;
+        font-weight: 900;
+    }
+
+    .hero-content {
+        width: 85%;
+        
+    }
+
+    main {
+        padding: 0 0.5rem;
+    }
+
+    .hero {
+        min-height: 50vh;
+    }
+
+}
