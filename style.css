@@ -39,7 +39,7 @@ main {
     margin-top: 1rem;
     width: 100%;
     border-radius: 25px;
-    min-height: 95vh;
+    min-height: 80vh;
     background: #263238;
     display: flex;
     align-items: center;
@@ -118,7 +118,7 @@ main {
     }
 
     .hero {
-        min-height: 50vh;
+        min-height: 40vh;
     }
 
 }
